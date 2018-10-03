@@ -10,7 +10,7 @@ public class TheFactorial {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(in.readLine());
 
-        if (n >= 1 && n <= 2000) {
+        if (1 <= n && n <= 2000) {
         int result = 0;
         do {
             n /= (++result);
