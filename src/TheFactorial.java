@@ -6,10 +6,11 @@ import java.io.InputStreamReader;
  * Created by Shadowdancer on 03.10.2018.
  */
 public class TheFactorial {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(in.readLine());
 
+        if (n >= 1 && n <= 2000) {
         int result = 0;
         do {
             n /= (++result);
@@ -17,5 +18,9 @@ public class TheFactorial {
         while (n > 1);
 
         System.out.println(result);
+        }else {
+            System.out.println("введенное число не соответствует условиям задания");
+        }
+
     }
 }
